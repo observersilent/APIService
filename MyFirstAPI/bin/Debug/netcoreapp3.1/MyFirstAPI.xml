@@ -1,0 +1,97 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MyFirstAPI</name>
+    </assembly>
+    <members>
+        <member name="M:MyFirstAPI.Controllers.CurveIntersectionsController.Post(MyFirstAPI.FindIntersectionsCommand)">
+            <summary>
+            Отправляешь кривые - получаешь их пересечения :)
+            </summary>
+            <param name="command"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MyFirstAPI.Controllers.FindIntersectionsResultController.GetIntersectionsResult(System.Guid)">
+            <summary>
+            Отправляешь GUID - получаешь информацию о кривых и их пересечениях :)
+            </summary>
+            <param name="guid"></param>
+            <returns></returns>
+        </member>
+        <member name="T:MyFirstAPI.Curve">
+            <summary>
+            Ломанная линия(кривая)
+            </summary>
+        </member>
+        <member name="P:MyFirstAPI.Curve.Name">
+            <summary>
+            Имя кривай
+            </summary>
+        </member>
+        <member name="P:MyFirstAPI.Curve.Points">
+            <summary>
+            Список точек кривой
+            </summary>
+        </member>
+        <member name="T:MyFirstAPI.CurveIntersections">
+            <summary>
+            Пересечения двух кривых
+            </summary>
+        </member>
+        <member name="P:MyFirstAPI.CurveIntersections.Points">
+            <summary>
+            Точки пересечения кривых
+            </summary>
+        </member>
+        <member name="T:MyFirstAPI.FindIntersectionsCommand">
+            <summary>
+            Команда поиска точек пересечения двух кривых
+            </summary>
+        </member>
+        <member name="P:MyFirstAPI.FindIntersectionsCommand.Guid">
+            <summary>
+            Уникальный идентификатор запроса
+            </summary>
+        </member>
+        <member name="P:MyFirstAPI.FindIntersectionsCommand.Curve1">
+            <summary>
+            Первая кривая в запроса
+            </summary>
+        </member>
+        <member name="P:MyFirstAPI.FindIntersectionsCommand.Curve2">
+            <summary>
+            Вторая кривая в запрсе
+            </summary>
+        </member>
+        <member name="T:MyFirstAPI.FindIntersectionsResult">
+            <summary>
+            Результат запроса о пересечений кривых
+            </summary>
+        </member>
+        <member name="P:MyFirstAPI.FindIntersectionsResult.Guid">
+            <summary>
+            идентификатор запроса
+            </summary>
+        </member>
+        <member name="P:MyFirstAPI.FindIntersectionsResult.Curve1">
+            <summary>
+            Первая кривая
+            </summary>
+        </member>
+        <member name="P:MyFirstAPI.FindIntersectionsResult.Curve2">
+            <summary>
+            Вторая кривая
+            </summary>
+        </member>
+        <member name="P:MyFirstAPI.FindIntersectionsResult.Intersections">
+            <summary>
+            Точки пересечений двух кривых
+            </summary>
+        </member>
+        <member name="T:MyFirstAPI.Point">
+            <summary>
+            Точка, содержит координаты X и Y
+            </summary>
+        </member>
+    </members>
+</doc>
